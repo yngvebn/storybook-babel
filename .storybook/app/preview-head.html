@@ -1,0 +1,40 @@
+<style>
+    body {
+        background: white !important;
+    }
+    * { animation-duration: 0s!important; transition: none !important; -webkit-transition: none!important; -moz-transition: none!important;-ms-transition: none!important;-o-transition: none!important; }
+</style>
+
+<link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,700,900|Roboto+Condensed:300,400,700,900|Montserrat:500,600,700,800,900&display=swap" media="print" onload="this.media='all'" crossorigin>
+
+<script>
+    var data = {};
+    function bankIdCallback(success) {
+        var requestId = 'abcdef';
+
+        var bankIdCallbackResponse = {
+            requestId: requestId,
+            success: success
+        };
+        var event = document.createEvent('CustomEvent');
+        event.initCustomEvent('bankIdCallback', false, false, bankIdCallbackResponse);
+
+        window.parent.document.dispatchEvent(event);
+    }
+    function addEvent(event) {
+        window.GLOBAL.events = {
+            ...(window.GLOBAL.events || {}),
+            [event]: async (...args) => {
+                console.log(`${event} called with`, args);
+                return Promise.resolve();
+            }
+        };
+    }
+    window.GLOBAL = {
+        events: {},
+        addEvent: addEvent,
+        data: data
+    };
+    window.dataLayer = window.dataLayer || [];
+</script>

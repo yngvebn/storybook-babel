@@ -1,0 +1,15 @@
+{
+    "extends": "../../tsconfig.app.json",
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "target": "es5",
+        "types": [
+            "node"
+        ]
+    },
+    "exclude": [
+        "../../App/test.ts",
+        "../../App/**/*.spec.ts",
+        "../../@libs/**/*.spec.ts"
+    ]
+}

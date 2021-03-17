@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "importHelpers": true,
+        "target": "es5",
+        "module": "es2015",
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "rootDir": "./",
+        "sourceMap": true,
+        "declaration": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "removeComments": true,
+        "resolveJsonModule": true,
+        "noImplicitAny": false,
+        "noUnusedLocals": true,
+        "esModuleInterop": true,
+        "noUnusedParameters": true,
+        "skipLibCheck": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "lib": [
+            "es5",
+            "es6",
+            "dom",
+            "dom.iterable"
+        ],
+        "paths": {
+            "@libs/*": ["@libs/*"],
+            "@toto/*": ["@toto/*"],
+            "@codegen/*": ["@codegen/*"],
+            "App/*": ["App/*"],
+            "Testing/*": ["Testing/*"]
+        },
+        "types": [
+            "jasmine",
+            "node",
+            "jquery"
+        ]
+    }
+}

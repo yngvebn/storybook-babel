@@ -1,0 +1,13 @@
+{
+    "extends": "./tsconfig.json",
+    "angularCompilerOptions": {
+        "preserveWhitespaces": true
+    },
+    "compilerOptions": {
+        "baseUrl": "."
+    },
+  "files": [
+    "App/toto.ts",
+    "App/polyfills.ts"
+  ]
+}
