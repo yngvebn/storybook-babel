@@ -235,23 +235,6 @@ _Pvt_Extensions
 .fake/
 
 .vs/
-src/Rikstoto.Toto/Styles/CSS/**
-
-src/Rikstoto.Toto/UI/Icons/*.png
-src/Rikstoto.Toto/UI/Icons/svg-defs.svg
-src/Rikstoto.Toto/UI/Flags/svg-flags.svg
-src/Rikstoto.Toto/Scripts/js/vendor/
-src/Rikstoto.Toto/**/*.js.map
-src/Rikstoto.Toto/Features/**/*.js
-src/Rikstoto.Toto/Scripts/js/app/*.*
-src/Rikstoto.Toto/Scripts/js/ts/*.js
-
-**\*.*.orig
-src/Rikstoto.Toto/App_Data
-
-src/Rikstoto.Toto/typings
-
-src/Rikstoto.Toto/karma_html/**/*.*
 src/*.ps1
 
 **/.vscode/*
@@ -264,18 +247,8 @@ src/*.ps1
 **/.idea
 
 coverage
-src/Rikstoto.Toto/.angulardoc.json
-
-src/Rikstoto.Toto/Styleguide
-src/Rikstoto.Toto/Styles/components.scss
 /**/.test/*
 
-src/Rikstoto.Toto/Cypress
-
-src/Rikstoto.Toto/.build
-src/Rikstoto.Toto/storybook-build
-src/Rikstoto.Toto.AcceptanceTests/Infrastructure/ChromeDriver
-src/Rikstoto.Toto.SmokeTests/Infrastructure/ChromeDriver
 *.feature.cs
 
 # cake
